@@ -29,6 +29,12 @@ LOCAL_SRC_FILES := lib/analysis.c \
                    lib/vorbisfile.c \
                    lib/window.c
 
+LOCAL_CFLAGS := \
+    -Wall -Werror \
+    -Wno-unused-function \
+    -Wno-unused-parameter \
+    -Wno-unused-variable \
+
 LOCAL_STATIC_LIBRARIES := libogg
 
 LOCAL_SDK_VERSION := 14
